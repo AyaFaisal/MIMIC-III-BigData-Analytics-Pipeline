@@ -1,408 +1,166 @@
-# MIMIC-III-BigData-Analytics-Pipeline
+🏥 MIMIC-III Big Data Healthcare Analytics Pipeline
+Docker Hadoop Hive MapReduce MIMIC-III
 
-## Overview
-This project builds a **batch analytics pipeline** on the **MIMIC-III Clinical Database (Demo v1.4)** using a **Docker-based big data environment**.  
-It supports structured querying via **Hive** and parallel analytics using **MapReduce**.
+📖 Overview
+A Docker-based big data pipeline for analyzing the MIMIC-III Clinical Database (Demo v1.4) using Hadoop ecosystem tools. Processes ICU patient data for batch analytics including:
 
-## Tech Stack
+Average length of stay
 
-- ![Docker](https://img.shields.io/badge/Platform-Docker-blue)  ![Hadoop](https://img.shields.io/badge/Framework-Hadoop-orange) ![Hive](https://img.shields.io/badge/Query_Engine-Hive-yellow) ![MapReduce](https://img.shields.io/badge/Compute-MapReduce-red) ![MIMIC-III](https://img.shields.io/badge/Dataset-MIMIC--III-green) 
+ICU readmissions
 
-## Steps
+Mortality rates by demographics
 
-### 1️⃣ Pull Docker Image  
-Pulled the required **Docker** image to the local machine.
+Medication patterns
 
-### 2️⃣ Upload Docker Image  
-Uploaded the **Docker** image successfully to the registry.
+Vital signs correlation
 
-### 3️⃣ Download Dataset  
-Downloaded the dataset for the project from the official source.
+🏗️ Architecture
+Pipeline Architecture
 
-### 4️⃣ Select and Clean Data  
-Selected 4 main tables from the dataset:
-- `ADMISSIONS`
-- `diagnoses_icd`
-- `icustays`
-- `PATIENTS`
+Data Ingestion: MIMIC-III dataset loading
 
-Performed data cleaning operations to ensure quality.
+Containerization: Docker-based Hadoop deployment
 
-### 5️⃣ Save as Parquet Files  
-Saved the cleaned tables as **Parquet** files for optimized storage and processing.
+Data Processing: Python cleaning/transformation
 
-### 6️⃣ Upload Parquet Files to Docker  
-Uploaded the **Parquet** files to the Docker container using **Git Bash**.
+Storage: HDFS distributed storage
 
-##---------------------------------------------------------------------
+Analytics: MapReduce and Hive processing
 
-<h1 align="center" style="color:#1976D2;">🚀 Big Data Healthcare Analytics Project</h1>
+🛠️ Technology Stack
+Component	Technology
+Containerization	Docker
+Distributed Storage	Apache Hadoop (HDFS)
+Data Processing	Python (Pandas, NumPy)
+File Format	Apache Parquet
+Batch Processing	Apache Hive
+Distributed Compute	Hadoop MapReduce (Java)
+Dataset	MIMIC-III Demo
+📊 Dataset Information
+MIMIC-III contains deidentified health data for 40,000+ ICU patients (2001-2012) including:
 
----
+Demographics
 
-##  Project Scope
+Vital signs
 
-This project focuses on the **batch processing and analytics of ICU patient data** from the **MIMIC-III Clinical Database** using a **Dockerized big data stack**.  
-It is designed for **educational and research purposes**, demonstrating the use of **Hadoop**, **Hive**, and **MapReduce** in healthcare data analytics.
+Lab tests
 
----
+Medications
 
+Caregiver notes
 
+🚀 Getting Started
+Prerequisites
+Hardware:
 
----
+4+ CPU cores (6 recommended)
 
-## 🗺️ Project Architecture Overview
+16GB RAM (32GB recommended)
 
-| Component  | Description                                      |
-|:------------|:------------------------------------------------|
-| Docker       | Container orchestration for Hadoop, Hive, and supporting services |
-| HDFS         | Distributed storage system                    |
-| Hive         | SQL-like querying interface                    |
-| MapReduce    | Java-based batch analytics engine               |
-| MIMIC-III    | Public ICU dataset for healthcare analytics     |
+50GB free storage
 
----
+Software:
 
-##  Project Directory Structure
+Docker 20.10+
 
+Docker Compose 1.29+
 
----
+Python 3.8+ with pandas/pyarrow
 
-##  Setup Instructions
+OpenJDK 8 or 11
 
-### Prerequisites
-- **Git Bash** (Windows)
-- **Python 3.x** with pip
-- **Docker & Docker Compose**
-- **Git CLI**
-- **MIMIC-III Demo CSV files** in `data/mimiciii/csv/`
+Git 2.25+
 
+Installation
+bash
+git clone https://github.com/yourusername/mimic-bigdata-pipeline.git
+cd mimic-bigdata-pipeline
 
---------------------------------------------
-# Big Data Pipeline for Healthcare Analytics (MIMIC-III)
-
-[![Pipeline Architecture](https://via.placeholder.com/1200x600/667eea/ffffff?text=Big+Data+Pipeline+Architecture)](https://via.placeholder.com/1200x600/667eea/ffffff?text=Big+Data+Pipeline+Architecture)
-
-## 📋 Project Overview
-
-This project implements a comprehensive big data pipeline for analyzing the MIMIC-III (Medical Information Mart for Intensive Care III) dataset using modern distributed computing technologies. The pipeline demonstrates end-to-end data processing from raw healthcare data to actionable insights using Hadoop ecosystem tools.
-
-## 🏗️ Architecture
-
-The pipeline follows a structured approach to process healthcare data:
-
-1. **Data Ingestion**: MIMIC-III dataset loading
-2. **Containerization**: Docker-based Hadoop deployment
-3. **Data Processing**: Python-based cleaning and transformation
-4. **Storage**: Distributed storage using HDFS
-5. **Analytics**: MapReduce and Hive-based analysis
-
-## 🛠️ Technology Stack
-
-- **Containerization**: Docker
-- **Distributed Storage**: Apache Hadoop (HDFS)
-- **Data Processing**: Python (Pandas, NumPy)
-- **File Format**: Apache Parquet
-- **Batch Processing**: Apache Hive
-- **Distributed Computing**: Hadoop MapReduce (Java)
-- **Dataset**: MIMIC-III Demo
-
-## 📊 Dataset Information
-
-**MIMIC-III** (Medical Information Mart for Intensive Care III) is a large, freely-available database comprising deidentified health-related data associated with over 40,000 patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012.
-
-### Key Dataset Features:
-- **Patients**: 40,000+ ICU patients
-- **Time Range**: 2001-2012
-- **Data Types**: Demographics, vital signs, laboratory tests, medications, caregiver notes
-- **Size**: ~60 tables with millions of records
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Docker Desktop
-- Python 3.8+
-- Java 8+
-- Git
-- Minimum 8GB RAM recommended
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/mimic-bigdata-pipeline.git
-   cd mimic-bigdata-pipeline
-   ```
-
-2. **Set up Docker environment**
-   ```bash
-   # Pull Hadoop Docker image
-   docker pull apache/hadoop:3.3.4
-   
-   # Create Docker network for Hadoop cluster
-   docker network create hadoop-network
-   ```
-
-3. **Install Python dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Download MIMIC-III Demo dataset**
-   ```bash
-   # Follow instructions at https://mimic.mit.edu/
-   # Place dataset files in ./data/raw/ directory
-   ```
-
-## 📁 Project Structure
-
-```
+# Set up environment
+docker pull apache/hadoop:3.3.4
+docker network create hadoop-network
+pip install -r requirements.txt
+📁 Project Structure
 mimic-bigdata-pipeline/
-├── data/
-│   ├── raw/                 # Original MIMIC-III CSV files
-│   ├── cleaned/             # Processed CSV files
-│   └── parquet/             # Parquet format files
-├── docker/
-│   ├── hadoop/              # Hadoop configuration files
-│   └── docker-compose.yml   # Multi-container setup
-├── scripts/
-│   ├── data_cleaning.py     # Python data preprocessing
-│   ├── csv_to_parquet.py    # Format conversion utilities
-│   └── hdfs_upload.sh       # HDFS data upload script
-├── mapreduce/
-│   ├── src/                 # Java MapReduce source code
-│   ├── PatientAge.java      # Average age calculation
-│   └── build.sh             # Compilation script
-├── hive/
-│   ├── create_tables.hql    # Hive table definitions
-│   ├── analytics_queries.hql # Analysis queries
-│   └── schema/              # Table schemas
-├── docs/
-│   ├── setup_guide.md       # Detailed setup instructions
-│   └── analysis_results.md  # Analysis findings
-└── README.md
-```
+├── data/              # Raw, cleaned, and parquet data
+├── docker/            # Hadoop configs and compose
+├── scripts/           # Data processing scripts
+├── mapreduce/         # Java MapReduce code
+├── hive/              # Hive table definitions
+└── docs/              # Documentation
+🔧 Pipeline Implementation
+Hadoop Distributed Storage
+✅ HDFS setup with replication factor 3
 
-## 🔧 Pipeline Components
+✅ Fault-tolerant architecture
 
-### A. Hadoop for Distributed Storage
+✅ MapReduce for distributed processing
 
-**Objective**: Store and manage the MIMIC-III dataset in a distributed manner.
+Hive Batch Processing
+✅ SQL-like analytics on patient data
 
-**Tasks Completed**:
-- ✅ Set up Hadoop and HDFS to store large chunks of the MIMIC-III dataset
-- ✅ Configured distributed storage with replication factor of 3
-- ✅ Performed distributed processing using Hadoop's MapReduce for simple analytics
-- ✅ Implemented average patient age calculation using MapReduce
+✅ Comprehensive healthcare insights
 
-**Key Features**:
-- Fault-tolerant storage across multiple nodes
-- Automatic data replication
-- Scalable architecture for large datasets
+✅ Optimized Parquet storage
 
-### B. Hive for Batch Processing
-
-**Objective**: Perform SQL-based analysis of the MIMIC-III dataset.
-
-**Tasks Completed**:
-- ✅ Created Hive tables for structured data (patient demographics, admissions)
-- ✅ Implemented HiveQL queries for comprehensive batch analytics
-- ✅ Generated insights on healthcare patterns and outcomes
-
-**Analytics Implemented**:
-- **Average length of stay per diagnosis**
-- **Distribution of ICU readmissions** 
-- **Mortality rates by demographic groups**
-- **Medication usage patterns**
-- **Vital signs correlation analysis**
-
-## 💻 Usage
-
-### 1. Start Hadoop Cluster
-
-```bash
-# Start Hadoop services using Docker Compose
+💻 Usage Examples
+bash
+# Start cluster
 cd docker/
 docker-compose up -d
 
-# Verify cluster health
-docker exec -it namenode hdfs dfsadmin -report
-```
-
-### 2. Data Preprocessing
-
-```bash
-# Clean and preprocess MIMIC-III data
+# Data preprocessing
 python scripts/data_cleaning.py --input data/raw/ --output data/cleaned/
 
-# Convert to Parquet format for better performance
-python scripts/csv_to_parquet.py --input data/cleaned/ --output data/parquet/
-```
-
-### 3. Upload Data to HDFS
-
-```bash
-# Upload processed data to Hadoop cluster
-bash scripts/hdfs_upload.sh data/parquet/ /mimic-iii/
-```
-
-### 4. Run MapReduce Jobs
-
-```bash
-# Compile and run MapReduce job for average age calculation
+# Run MapReduce job
 cd mapreduce/
 bash build.sh
 hadoop jar patient-analysis.jar PatientAge /mimic-iii/patients /output/average-age
-```
 
-### 5. Execute Hive Queries
-
-```bash
-# Start Hive shell
+# Execute Hive queries
 docker exec -it hive-server hive
-
-# Create tables and run analytics
 hive> source /opt/hive/scripts/create_tables.hql;
-hive> source /opt/hive/scripts/analytics_queries.hql;
-```
+📈 Key Insights
+Demographics: Avg age 65.8, 55% Male
 
-## 📈 Analysis Results
+Outcomes: 8.9% mortality, 12.5% readmission
 
-### Key Insights Discovered
+Utilization: Peak admissions 10AM-2PM
 
-1. **Patient Demographics**:
-   - Average patient age: 65.8 years
-   - Gender distribution: 55% Male, 45% Female
-   - Most common admission type: Emergency (78%)
+🚨 Challenges & Solutions
+Challenge	Solution
+Data volume/complexity	Parquet format + partitioning
+Docker resource limits	Careful CPU/memory configuration
+Data quality issues	Comprehensive cleaning pipeline
+🔮 Future Enhancements
+Real-time processing with Kafka/Spark
 
-2. **Clinical Outcomes**:
-   - Average ICU stay: 4.2 days
-   - Readmission rate: 12.5% within 30 days
-   - Overall mortality rate: 8.9%
+Predictive modeling
 
-3. **Resource Utilization**:
-   - Peak admission hours: 10 AM - 2 PM
-   - Average medications per patient: 15.3
-   - Most monitored vital sign: Heart rate (99.2% coverage)
+Visualization dashboard
 
-### Performance Metrics
+Cloud migration (AWS EMR/GCP Dataproc)
 
-- **Data Processing Speed**: 2.5 GB/hour on 4-node cluster
-- **Query Response Time**: Average 45 seconds for complex aggregations
-- **Storage Efficiency**: 60% compression ratio with Parquet format
+📄 License
+MIT - See LICENSE
 
-## 🔍 Technologies Deep Dive
+🙏 Acknowledgments
+MIMIC-III Dataset from PhysioNet
 
-### Docker Configuration
-- Multi-container setup with dedicated containers for NameNode, DataNodes, and Hive
-- Custom network configuration for inter-container communication
-- Volume mounting for persistent data storage
+Apache Hadoop Community
 
-### Python Data Processing
-- **Pandas**: Data manipulation and cleaning
-- **NumPy**: Numerical computations
-- **PyArrow**: Parquet file handling
-- **Matplotlib/Seaborn**: Data visualization
-
-### Hadoop MapReduce
-- Custom Java implementation for distributed computing
-- Efficient data partitioning and parallel processing
-- Fault-tolerant job execution
-
-### Apache Hive
-- SQL-like interface for big data analytics
-- Schema-on-read for flexible data processing
-- Integration with HDFS for seamless data access
-
-## 🚨 Challenges & Solutions
-
-### Challenge 1: Data Volume and Complexity
-**Solution**: Implemented efficient data partitioning and used Parquet format for optimized storage and query performance.
-
-### Challenge 2: Docker Resource Management
-**Solution**: Configured appropriate memory and CPU limits for each container to prevent resource conflicts.
-
-### Challenge 3: Data Quality Issues
-**Solution**: Developed comprehensive data cleaning pipeline with validation checks and error handling.
-
-## 🔮 Future Enhancements
-
-- [ ] **Real-time Processing**: Integrate Apache Kafka and Spark Streaming
-- [ ] **Machine Learning**: Add predictive models using Spark MLlib
-- [ ] **Visualization Dashboard**: Implement Grafana/Tableau integration
-- [ ] **Cloud Migration**: Deploy on AWS EMR or Google Cloud Dataproc
-- [ ] **Data Lake Architecture**: Implement Delta Lake for ACID transactions
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **MIMIC-III Dataset**: [PhysioNet](https://physionet.org/content/mimiciii/1.4/)
-- **Apache Hadoop Community** for the robust distributed computing framework
-- **Docker** for containerization capabilities
-- **Healthcare Analytics Community** for domain expertise and insights
+Docker Team
 
 
-------------------------
+This single block contains everything you need to copy-paste into your README.md file. It includes:
 
-readme_content = """
-# MIMIC-III Big Data Pipeline  
-## Healthcare Analytics with Hadoop and Hive  
+1. All badges on one line for proper display
+2. Consistent markdown formatting throughout
+3. All sections in logical order
+4. Proper table formatting
+5. Code blocks ready for copy-paste
+6. All visual elements preserved
+7. No duplicate content
+8. Complete project documentation
 
-**Your Name**  
-**May 2025**
-
----
-
-## 📖 Overview  
-
-This project is a big data pipeline for healthcare analytics using the MIMIC-III Clinical Database (Demo v1.4). It processes patient data for batch analytics like:
-- Average length of stay
-- ICU readmissions
-- Mortality rates by demographics  
-
-It uses:
-- **Hadoop** for storage  
-- **Hive** for SQL analytics  
-- **Docker** for containerized setup  
-
----
-
-## 🖥️ System Requirements  
-
-### Hardware  
-- **CPU:** 4 cores (6+ recommended)  
-- **RAM:** 16 GB (32 GB recommended)  
-- **Storage:** 50 GB free space  
-
-### Software  
-- **OS:** Linux (Ubuntu 20.04+), macOS, or Windows (WSL2)  
-- **Docker:** 20.10+  
-- **Docker Compose:** 1.29+  
-- **Git:** 2.25+  
-- **Python:** 3.8+ with `pandas` & `pyarrow`  
-- **Java:** OpenJDK 8 or 11  
-
----
-
-## ⚙️ Installation & Setup  
-
-### 1️⃣ Prerequisites  
-- Install Docker, Docker Compose, Git, Python
-
-### 2️⃣ Clone the Environment  
-```bash
-git clone https://github.com/Marcel-Jan/docker-hadoop-spark.git
-cd docker-hadoop-spark
-
+Just copy this entire block and paste it into your README.md file - it will render exactly as shown in the preview.
