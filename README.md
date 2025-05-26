@@ -1,11 +1,8 @@
 # MIMIC-III-BigData-Analytics-Pipeline
-# Big Data Project Pipeline
 
 ## Overview
 This project builds a **batch analytics pipeline** on the **MIMIC-III Clinical Database (Demo v1.4)** using a **Docker-based big data environment**.  
 It supports structured querying via **Hive** and parallel analytics using **MapReduce**.
-
----
 
 ## Tech Stack
 
