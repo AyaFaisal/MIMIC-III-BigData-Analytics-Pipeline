@@ -9,11 +9,11 @@ It supports structured querying via **Hive** and parallel analytics using **MapR
 
 ## Tech Stack
 
-- ![Docker](https://img.shields.io/badge/Platform-Docker-blue)
-- ![Hadoop](https://img.shields.io/badge/Framework-Hadoop-orange)
-- ![Hive](https://img.shields.io/badge/Query_Engine-Hive-yellow)
-- ![MapReduce](https://img.shields.io/badge/Compute-MapReduce-red)
-- ![MIMIC-III](https://img.shields.io/badge/Dataset-MIMIC--III-green)
+- ![Docker](https://img.shields.io/badge/Platform-Docker-blue)-
+- [Hadoop](https://img.shields.io/badge/Framework-Hadoop-orange)
+- [Hive](https://img.shields.io/badge/Query_Engine-Hive-yellow)
+- [MapReduce](https://img.shields.io/badge/Compute-MapReduce-red)
+- [MIMIC-III](https://img.shields.io/badge/Dataset-MIMIC--III-green)
 
 ---
 
