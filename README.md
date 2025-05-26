@@ -39,6 +39,43 @@ Uploaded the **Parquet** files to the Docker container using **Git Bash**.
 
 ##---------------------------------------------------------------------
 
+<h1 align="center" style="color:#1976D2;">🚀 Big Data Healthcare Analytics Project</h1>
+
+---
+
+## 📊 Project Scope
+
+This project focuses on the **batch processing and analytics of ICU patient data** from the **MIMIC-III Clinical Database** using a **Dockerized big data stack**.  
+It is designed for **educational and research purposes**, demonstrating the use of **Hadoop**, **Hive**, and **MapReduce** in healthcare data analytics.
+
+---
+
+## 📌 Tech Stack
+
+| Type          | Tool/Platform |
+|:--------------|:---------------|
+| ![Docker](https://img.shields.io/badge/Platform-Docker-blue) | Docker |
+| ![Hadoop](https://img.shields.io/badge/Framework-Hadoop-orange) | Hadoop |
+| ![Hive](https://img.shields.io/badge/Query_Engine-Hive-yellow) | Hive |
+| ![MapReduce](https://img.shields.io/badge/Compute-MapReduce-red) | MapReduce |
+| ![MIMIC-III](https://img.shields.io/badge/Dataset-MIMIC--III-green) | MIMIC-III |
+
+---
+
+## 🗺️ Project Architecture Overview
+
+| Component  | Description                                      |
+|:------------|:------------------------------------------------|
+| Docker       | Container orchestration for Hadoop, Hive, and supporting services |
+| HDFS         | Distributed storage system                    |
+| Hive         | SQL-like querying interface                    |
+| MapReduce    | Java-based batch analytics engine               |
+| MIMIC-III    | Public ICU dataset for healthcare analytics     |
+
+---
+
+## 📂 Project Directory Structure
+
 
 
 
