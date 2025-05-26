@@ -34,12 +34,7 @@ Using Git Bash, the cleaned Parquet files were uploaded into the Docker containe
 
 ---
 
-## Notes  
-- Make sure Docker is running before uploading files.  
-- Use appropriate Git Bash commands (such as `docker cp`) to transfer files into the container.
 
----
 
-Good luck with your project!
 
 ر
