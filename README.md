@@ -37,16 +37,7 @@ Saved the cleaned tables as **Parquet** files for optimized storage and processi
 ### 6️⃣ Upload Parquet Files to Docker  
 Uploaded the **Parquet** files to the Docker container using **Git Bash**.
 
----
-
-## Notes  
-- Ensure **Docker** is running before transferring files.
-- Use commands like `docker cp` to copy files into the container.
-
----
-
-## Final Note  
-Best of luck with your analytics pipeline! 🚀
+##---------------------------------------------------------------------
 
 # Big Data Project Pipeline
 
