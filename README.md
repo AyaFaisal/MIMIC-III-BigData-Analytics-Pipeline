@@ -84,7 +84,7 @@ It is designed for **educational and research purposes**, demonstrating the use 
 --------------------------------------------
 # Big Data Pipeline for Healthcare Analytics (MIMIC-III)
 
-![Pipeline Architecture](https://via.placeholder.com/1200x600/667eea/ffffff?text=Big+Data+Pipeline+Architecture)
+[![Pipeline Architecture](https://via.placeholder.com/1200x600/667eea/ffffff?text=Big+Data+Pipeline+Architecture)](https://via.placeholder.com/1200x600/667eea/ffffff?text=Big+Data+Pipeline+Architecture)
 
 ## 📋 Project Overview
 
