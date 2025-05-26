@@ -50,15 +50,7 @@ It is designed for **educational and research purposes**, demonstrating the use 
 
 ---
 
-##  Tech Stack
 
-| Type          | Tool/Platform |
-|:--------------|:---------------|
-| ![Docker](https://img.shields.io/badge/Platform-Docker-blue) | Docker |
-| ![Hadoop](https://img.shields.io/badge/Framework-Hadoop-orange) | Hadoop |
-| ![Hive](https://img.shields.io/badge/Query_Engine-Hive-yellow) | Hive |
-| ![MapReduce](https://img.shields.io/badge/Compute-MapReduce-red) | MapReduce |
-| ![MIMIC-III](https://img.shields.io/badge/Dataset-MIMIC--III-green) | MIMIC-III |
 
 ---
 
