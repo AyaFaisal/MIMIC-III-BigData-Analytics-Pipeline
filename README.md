@@ -77,6 +77,25 @@ It is designed for **educational and research purposes**, demonstrating the use 
 ## 📂 Project Directory Structure
 
 
+---
+
+## ⚙️ Setup Instructions
+
+### 📑 Prerequisites
+- **Git Bash** (Windows)
+- **Python 3.x** with pip
+- **Docker & Docker Compose**
+- **Git CLI**
+- **MIMIC-III Demo CSV files** in `data/mimiciii/csv/`
+
+---
+
+## 🚀 Step-by-Step Execution
+
+### 📌 Step 1: Install Python Dependencies
+```bash
+pip install pandas pyarrow
+
 
 
 ر
