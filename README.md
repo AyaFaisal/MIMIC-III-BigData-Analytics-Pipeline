@@ -1,8 +1,4 @@
-تقليص
 
-تغليف
-
-نسخ
 # ------ Big Data Healthcare Pipeline - MIMIC-III Dataset------
 
 A comprehensive big data pipeline for healthcare analytics using the MIMIC-III Clinical Database with Hadoop, Hive, and MapReduce.
