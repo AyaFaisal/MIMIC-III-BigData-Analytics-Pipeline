@@ -43,14 +43,14 @@ Uploaded the **Parquet** files to the Docker container using **Git Bash**.
 
 ---
 
-## 📊 Project Scope
+##  Project Scope
 
 This project focuses on the **batch processing and analytics of ICU patient data** from the **MIMIC-III Clinical Database** using a **Dockerized big data stack**.  
 It is designed for **educational and research purposes**, demonstrating the use of **Hadoop**, **Hive**, and **MapReduce** in healthcare data analytics.
 
 ---
 
-## 📌 Tech Stack
+##  Tech Stack
 
 | Type          | Tool/Platform |
 |:--------------|:---------------|
@@ -74,14 +74,14 @@ It is designed for **educational and research purposes**, demonstrating the use 
 
 ---
 
-## 📂 Project Directory Structure
+##  Project Directory Structure
 
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 📑 Prerequisites
+### Prerequisites
 - **Git Bash** (Windows)
 - **Python 3.x** with pip
 - **Docker & Docker Compose**
@@ -90,12 +90,11 @@ It is designed for **educational and research purposes**, demonstrating the use 
 
 ---
 
-## 🚀 Step-by-Step Execution
+##  Step-by-Step Execution
 
-### 📌 Step 1: Install Python Dependencies
+###  Step 1: Install Python Dependencies
 ```bash
 pip install pandas pyarrow
 
 
 
-ر
