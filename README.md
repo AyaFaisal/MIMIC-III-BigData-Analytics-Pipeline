@@ -3,24 +3,24 @@
 تغليف
 
 نسخ
-# 🏥 Big Data Healthcare Pipeline - MIMIC-III Dataset
+# ------ Big Data Healthcare Pipeline - MIMIC-III Dataset------
 
 A comprehensive big data pipeline for healthcare analytics using the MIMIC-III Clinical Database with Hadoop, Hive, and MapReduce.
 
-## 🎯 Project Overview
+## Project Overview
 This project implements a scalable big data pipeline for healthcare analytics using the MIMIC-III Clinical Database. It leverages distributed storage, batch processing, and advanced analytics to provide insights into patient care, hospital operations, and medical outcomes.
 
-### 🔍 What This Project Does
+###  What This Project Does
 - **Processes large-scale healthcare data** using distributed computing.
 - **Performs clinical analytics** such as length-of-stay prediction and readmission analysis.
 - **Implements MapReduce algorithms** for parallel processing of medical records.
 - **Uses SQL-based analytics** through Apache Hive for structured healthcare queries.
 - **Containerizes the pipeline** using Docker for easy deployment.
 
-## 🏗️ System Architecture
+##  System Architecture
 The pipeline processes data from the MIMIC-III dataset to deliver actionable healthcare insights.
 
-### 📊 Pipeline Flow
+###  Pipeline Flow
 1. **MIMIC-III Demo Dataset**: Raw healthcare data input.
 2. **Docker Environment**: Containerized Hadoop ecosystem setup.
 3. **Python Data Cleaning**: Preprocessing with Pandas.
@@ -29,8 +29,8 @@ The pipeline processes data from the MIMIC-III dataset to deliver actionable hea
 6. **MapReduce Jobs**: Java-based parallel processing (e.g., average age calculation).
 7. **Apache Hive**: SQL-based analytics and table creation.
 
-## ✨ Key Features
-### 🔧 Technical Implementation
+##  Key Features
+### Technical Implementation
 - **Containerized Environment**: Docker setup with Hadoop, Hive, and Spark.
 - **Distributed Storage**: HDFS for scalable data storage.
 - **SQL Analytics**: Complex Hive queries for healthcare insights.
@@ -59,8 +59,7 @@ The pipeline processes data from the MIMIC-III dataset to deliver actionable hea
 - Docker Desktop (4GB+ RAM allocated)
 - Git
 - 20GB+ free disk space
-
-### 🔧 Setup Instructions
+ Setup Instructions
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/AhmedSrour7/Big-Data-Healthcare-Pipeline-MIMIC-III-Dataset-.git
@@ -229,7 +228,7 @@ Advanced Hive analytics for healthcare insights.
 Custom MapReduce jobs for parallel processing.
 Comprehensive documentation and visual guides.
 Performance optimization and testing.
-🎯 Business Value
+###### Business Value
 Reduced Analysis Time: From hours to minutes for complex queries.
 Scalable Architecture: Handles datasets 10x larger than original.
 Cost Efficiency: 40% reduction in processing costs vs. traditional methods.
