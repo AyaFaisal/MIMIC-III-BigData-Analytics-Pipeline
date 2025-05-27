@@ -16,7 +16,7 @@ This project implements a comprehensive big data pipeline for analyzing the MIMI
  
 
 ![Description](ph/2.png)
-![Description](ph/3.png)
+
 
 
 ## 🏗️ Architecture
@@ -82,7 +82,7 @@ The pipeline follows a structured approach to process healthcare data:
    ```
 
 ## 📁 Project Structure
-
+![Description](ph/3.png)
 ```
 mimic-bigdata-pipeline/
 ├── data/
