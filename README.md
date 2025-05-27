@@ -14,13 +14,10 @@
 This project implements a comprehensive big data pipeline for analyzing the MIMIC-III (Medical Information Mart for Intensive Care III) dataset using modern distributed computing technologies. The pipeline demonstrates end-to-end data processing from raw healthcare data to actionable insights using Hadoop ecosystem tools.
 
  
-![Description](ph/mimic-ph.png)
 
-![Description](ph/mimic-ph.png)
+![Description](ph/2.png)
+![Description](ph/3.png)
 
-## 📋 Project Overview
-
-This project implements a comprehensive big data pipeline for analyzing the MIMIC-III (Medical Information Mart for Intensive Care III) dataset using modern distributed computing technologies. The pipeline demonstrates end-to-end data processing from raw healthcare data to actionable insights using Hadoop ecosystem tools.
 
 ## 🏗️ Architecture
 
@@ -34,13 +31,7 @@ The pipeline follows a structured approach to process healthcare data:
 
 ## 🛠️ Technology Stack
 
-- **Containerization**: Docker
-- **Distributed Storage**: Apache Hadoop (HDFS)
-- **Data Processing**: Python (Pandas, NumPy)
-- **File Format**: Apache Parquet
-- **Batch Processing**: Apache Hive
-- **Distributed Computing**: Hadoop MapReduce (Java)
-- **Dataset**: MIMIC-III Demo
+![Description](ph/2.png)
 
 ## 📊 Dataset Information
 
