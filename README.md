@@ -83,31 +83,8 @@ The pipeline follows a structured approach to process healthcare data:
 
 ## 📁 Project Structure
 ![Description](ph/3.png)
-```
-mimic-bigdata-pipeline/
-├── data/
-│   ├── raw/                 # Original MIMIC-III CSV files
-│   ├── cleaned/             # Processed CSV files
-│   └── parquet/             # Parquet format files
-├── docker/
-│   ├── hadoop/              # Hadoop configuration files
-│   └── docker-compose.yml   # Multi-container setup
-├── scripts/
-│   ├── data_cleaning.py     # Python data preprocessing
-│   ├── csv_to_parquet.py    # Format conversion utilities
-│   └── hdfs_upload.sh       # HDFS data upload script
-├── mapreduce/
-│   ├── src/                 # Java MapReduce source code
-│   ├── PatientAge.java      # Average age calculation
-│   └── build.sh             # Compilation script
-├── hive/
-│   ├── create_tables.hql    # Hive table definitions
-│   ├── analytics_queries.hql # Analysis queries
-│   └── schema/              # Table schemas
-├── docs/
-│   ├── setup_guide.md       # Detailed setup instructions
-│   └── analysis_results.md  # Analysis findings
-└── README.md
+
+
 ```
 
 ## 🔧 Pipeline Components
