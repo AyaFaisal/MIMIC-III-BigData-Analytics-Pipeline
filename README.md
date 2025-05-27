@@ -15,7 +15,6 @@ This project implements a comprehensive big data pipeline for analyzing the MIMI
 
  
 
-![Description](ph/2.png)
 
 
 
