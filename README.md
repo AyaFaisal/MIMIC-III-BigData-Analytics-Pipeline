@@ -1,6 +1,7 @@
 # Big Data Pipeline for Healthcare Analytics (MIMIC-III)
 
-![Pipeline Architecture](https://via.placeholder.com/1200x600/667eea/ffffff?text=Big+Data+Pipeline+Architecture)
+![Uploading ChatGPT Image May 27, 2025, 01_05_49 AM.png…]()
+
 
 ## 📋 Project Overview
 
