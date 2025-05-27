@@ -1,6 +1,7 @@
 # Big Data Pipeline for Healthcare Analytics (MIMIC-III)
 
-![Uploading ChatGPT Image May 27, 2025, 01_05_49 AM.png…]()
+![Description](ph/mimic-ph.png)
+
 
 
 ## 📋 Project Overview
