@@ -18,9 +18,7 @@ This project implements a comprehensive big data pipeline for analyzing the MIMI
 
 ![Description](ph/2.png)
 ![Description](ph/3.png)
-## 📋 Project Overview
 
-This project implements a comprehensive big data pipeline for analyzing the MIMIC-III (Medical Information Mart for Intensive Care III) dataset using modern distributed computing technologies. The pipeline demonstrates end-to-end data processing from raw healthcare data to actionable insights using Hadoop ecosystem tools.
 
 ## 🏗️ Architecture
 
