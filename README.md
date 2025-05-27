@@ -194,7 +194,7 @@ hive> source /opt/hive/scripts/analytics_queries.hql;
 ```
 
 ## 📈 Analysis Results
-
+![Description](ph/anal.png)
 ### Key Insights Discovered
 
 1. **Patient Demographics**:
