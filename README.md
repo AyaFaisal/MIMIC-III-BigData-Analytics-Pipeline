@@ -1,5 +1,18 @@
 # Big Data Pipeline for Healthcare Analytics (MIMIC-III)
+## 🚀 Tech Stack & Tools  
 
+[![Platform](https://img.shields.io/badge/Platform-Hadoop-66ccff?logo=apachehadoop&logoColor=white)](https://hadoop.apache.org/)
+[![Framework](https://img.shields.io/badge/Framework-MapReduce-ED8B00?logo=apache&logoColor=white)](https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
+[![Language](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Data Cleaning](https://img.shields.io/badge/Data%20Cleaning-Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Format Conversion](https://img.shields.io/badge/Format-Parquet-4caf50?logo=apacheparquet&logoColor=white)](https://parquet.apache.org/)
+[![Query Engine](https://img.shields.io/badge/Query%20Engine-Hive-FDEE21?logo=apachehive&logoColor=black)](https://hive.apache.org/)
+[![Compute](https://img.shields.io/badge/Compute-Hadoop%20MapReduce-FF6F00?logo=apache&logoColor=white)](https://hadoop.apache.org/)
+[![Dataset](https://img.shields.io/badge/Dataset-MIMIC--III-7c4dff)](https://mimic.mit.edu/)
+
+
+
+ 
 ![Description](ph/mimic-ph.png)
 
 
