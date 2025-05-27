@@ -31,7 +31,7 @@ The pipeline follows a structured approach to process healthcare data:
 
 ## 🛠️ Technology Stack
 
-![Description](ph/2.png)
+![Description](ph/tec-1.png)
 
 ## 📊 Dataset Information
 
