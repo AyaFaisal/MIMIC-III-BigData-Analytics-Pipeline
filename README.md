@@ -10,12 +10,13 @@
 [![Compute](https://img.shields.io/badge/Compute-Hadoop%20MapReduce-FF6F00?logo=apache&logoColor=white)](https://hadoop.apache.org/)
 [![Dataset](https://img.shields.io/badge/Dataset-MIMIC--III-7c4dff)](https://mimic.mit.edu/)
 
-
+📋 Project Overview
+This project implements a comprehensive big data pipeline for analyzing the MIMIC-III (Medical Information Mart for Intensive Care III) dataset using modern distributed computing technologies. The pipeline demonstrates end-to-end data processing from raw healthcare data to actionable insights using Hadoop ecosystem tools.
 
  
 ![Description](ph/mimic-ph.png)
 
-
+![Description](ph/mimic-ph.png)
 
 ## 📋 Project Overview
 
