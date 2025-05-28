@@ -1,5 +1,5 @@
 # Big Data Pipeline for Healthcare Analytics (MIMIC-III)
-## 🚀 Tech Stack & Tools  
+##  Tech Stack & Tools  
 
 [![Platform](https://img.shields.io/badge/Platform-Hadoop-66ccff?logo=apachehadoop&logoColor=white)](https://hadoop.apache.org/)
 [![Framework](https://img.shields.io/badge/Framework-MapReduce-ED8B00?logo=apache&logoColor=white)](https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
@@ -10,7 +10,7 @@
 [![Compute](https://img.shields.io/badge/Compute-Hadoop%20MapReduce-FF6F00?logo=apache&logoColor=white)](https://hadoop.apache.org/)
 [![Dataset](https://img.shields.io/badge/Dataset-MIMIC--III-7c4dff)](https://mimic.mit.edu/)
 
-📋 Project Overview
+## Project Overview
 This project implements a comprehensive big data pipeline for analyzing the MIMIC-III (Medical Information Mart for Intensive Care III) dataset using modern distributed computing technologies. The pipeline demonstrates end-to-end data processing from raw healthcare data to actionable insights using Hadoop ecosystem tools.
 
  
@@ -18,7 +18,7 @@ This project implements a comprehensive big data pipeline for analyzing the MIMI
 
 
 
-## 🏗️ Architecture
+## Architecture
 
 The pipeline follows a structured approach to process healthcare data:
 
@@ -28,11 +28,11 @@ The pipeline follows a structured approach to process healthcare data:
 4. **Storage**: Distributed storage using HDFS
 5. **Analytics**: MapReduce and Hive-based analysis
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ![Description](ph/tec-1.png)
 
-## 📊 Dataset Information
+## Dataset Information
 
 **MIMIC-III** (Medical Information Mart for Intensive Care III) is a large, freely-available database comprising deidentified health-related data associated with over 40,000 patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012.
 
@@ -42,7 +42,7 @@ The pipeline follows a structured approach to process healthcare data:
 - **Data Types**: Demographics, vital signs, laboratory tests, medications, caregiver notes
 - **Size**: ~60 tables with millions of records
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ The pipeline follows a structured approach to process healthcare data:
    # Pull Hadoop Docker image
    docker pull apache/hadoop:3.3.4
    
-   # Create Docker network for Hadoop cluster
+   ## Create Docker network for Hadoop cluster
    docker network create hadoop-network
    ```
 
@@ -80,7 +80,7 @@ The pipeline follows a structured approach to process healthcare data:
    # Place dataset files in ./data/raw/ directory
    ```
 
-## 📁 Project Structure
+##  Project Structure
 ![Description](ph/3.png)
 
 
@@ -119,7 +119,7 @@ The pipeline follows a structured approach to process healthcare data:
 - **Medication usage patterns**
 - **Vital signs correlation analysis**
 
-## 💻 Usage
+##  Usage
 
 ### 1. Start Hadoop Cluster
 
@@ -169,7 +169,7 @@ hive> source /opt/hive/scripts/create_tables.hql;
 hive> source /opt/hive/scripts/analytics_queries.hql;
 ```
 
-## 📈 Analysis Results
+##  Analysis Results
 ![Description](ph/anal.png)
 ### Key Insights Discovered
 
@@ -194,7 +194,7 @@ hive> source /opt/hive/scripts/analytics_queries.hql;
 - **Query Response Time**: Average 45 seconds for complex aggregations
 - **Storage Efficiency**: 60% compression ratio with Parquet format
 
-## 🔍 Technologies Deep Dive
+##  Technologies Deep Dive
 
 ### Docker Configuration
 - Multi-container setup with dedicated containers for NameNode, DataNodes, and Hive
@@ -217,7 +217,7 @@ hive> source /opt/hive/scripts/analytics_queries.hql;
 - Schema-on-read for flexible data processing
 - Integration with HDFS for seamless data access
 
-## 🚨 Challenges & Solutions
+##  Challenges & Solutions
 
 ### Challenge 1: Data Volume and Complexity
 **Solution**: Implemented efficient data partitioning and used Parquet format for optimized storage and query performance.
@@ -228,7 +228,7 @@ hive> source /opt/hive/scripts/analytics_queries.hql;
 ### Challenge 3: Data Quality Issues
 **Solution**: Developed comprehensive data cleaning pipeline with validation checks and error handling.
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] **Real-time Processing**: Integrate Apache Kafka and Spark Streaming
 - [ ] **Machine Learning**: Add predictive models using Spark MLlib
@@ -236,7 +236,7 @@ hive> source /opt/hive/scripts/analytics_queries.hql;
 - [ ] **Cloud Migration**: Deploy on AWS EMR or Google Cloud Dataproc
 - [ ] **Data Lake Architecture**: Implement Delta Lake for ACID transactions
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -244,11 +244,11 @@ hive> source /opt/hive/scripts/analytics_queries.hql;
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **MIMIC-III Dataset**: [PhysioNet](https://physionet.org/content/mimiciii/1.4/)
 - **Apache Hadoop Community** for the robust distributed computing framework
